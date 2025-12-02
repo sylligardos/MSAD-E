@@ -1,10 +1,10 @@
-# MSADv2: Extending Model Selection for Anomaly Detection in Time Series with Weighted Averages
+# MSAD: A Deep Dive into Model Selection for Time Series Anomaly Detection
 
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 
 ## Overview
 
-MSADv2 is a research-focused repository dedicated to improving model selection strategies for anomaly detection in time series data. By introducing and experimenting with weighted average approaches, MSADv2 aims to enhance the robustness and accuracy of anomaly detection, especially in real-world, noisy, and diverse temporal datasets.
+MSADv2 is a research-focused repository dedicated to improving model selection strategies for anomaly detection in time series data. By introducing and experimenting with weighted average approaches, MSADv2 aims to enhance the robustness and accuracy of anomaly detection, especially in real-world, noisy, and diverse temporal datasets. 
 
 **This repository extends [`boniolp/MSAD`](https://github.com/boniolp/MSAD), which accompanies the following paper:**
 
@@ -24,7 +24,7 @@ MSADv2 is a research-focused repository dedicated to improving model selection s
   ```
   **MSADv2 pushes further with weighted averaging techniques and new comparative experiments.**
 
-This work also extends ideas introduced in ["MSAD: A deep dive into model selection for time series anomaly detection"](https://arxiv.org/pdf/2510.26643), published in _The VLDB Journal_ (2025).
+This repository implemenents the ideas introduced in ["MSAD: A deep dive into model selection for time series anomaly detection"](https://arxiv.org/pdf/2510.26643), published in _The VLDB Journal_ (2025).
 
 ## Authors
 
@@ -81,7 +81,7 @@ This repository accompanies the following publication:
 - [MSAD: A deep dive into model selection for time series anomaly detection](https://arxiv.org/pdf/2510.26643)  
   _The VLDB Journal_, 2025
 
-If you use MSADv2 for academic work, please cite the paper:
+If you use MSADv2 for academic work, please cite both papers:
 
 ```
 @article{sylligardos2025msad,
@@ -94,6 +94,18 @@ If you use MSADv2 for academic work, please cite the paper:
   year={2025},
   publisher={Springer}
 }
+```
+```
+@article{sylligardos2023choose,
+    title={Choose wisely: An extensive evaluation of model selection for anomaly detection in time series},
+    author={Sylligardos, Emmanouil and Boniol, Paul and Paparrizos, John and Trahanias, Panos and Palpanas, Themis},
+    journal={Proceedings of the VLDB Endowment},
+    volume={16},
+    number={11},
+    pages={3418--3432},
+    year={2023},
+    publisher={VLDB Endowment}
+  }
 ```
 
 ## Contributing
@@ -114,3 +126,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 Supports and builds on prior work in anomaly detection, time series analysis, and model selection. Special thanks to the open-source community for providing foundational libraries and resources.
 
 ---
+
