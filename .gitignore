@@ -1,4 +1,5 @@
 # Project-specific ignores
+/references
 data
 models
 .vscode
