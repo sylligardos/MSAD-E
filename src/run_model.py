@@ -29,6 +29,8 @@ def run_model(experiment, model, split, test=False):
         'unsupervised' if 'unsupervised' in split else 'supervised', 
         split.replace('unsupervised', model_name) if 'unsupervised' in split else model_name
     )
+
+    model = load_model(model_name, window_size, model_weights_path)
  
     y, fnames, window_data, scores = load_data(
         data_path=data_path,
@@ -37,7 +39,6 @@ def run_model(experiment, model, split, test=False):
         features=(model == 'knn'),
         split_file=split
     )
-    model = load_model(model_name, window_size, model_weights_path)
     window_pred_probabilities = predict_timeseries(model_name, model, window_data, fnames)
 
     top_models_combinations = {
